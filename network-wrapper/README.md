@@ -22,10 +22,10 @@ network.setup({
 });
 ```
 
-### Push data to queue
+### Push data to stack
 
 ```javascript
-//Push data element to queue
+//Push data element to stack
 network.push(
     {
         call: 'getBalance',
@@ -36,7 +36,7 @@ network.push(
     }
 );
 
-//Push data element to queue
+//Push data element to stack
 network.push(
     {
         call: 'getTransaction',

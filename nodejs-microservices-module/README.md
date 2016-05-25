@@ -16,7 +16,6 @@ Our module locate at ./node_modules/index.js this module contain
 
 ### User module as internal API
 ```javascript
-//Setup network
 var moduleExample = require('module-example');
 var moduleExampleApiInternal = new moduleExample.internal();
 

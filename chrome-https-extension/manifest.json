@@ -1,0 +1,21 @@
+{
+  "name": "TAD HTTPS",
+  "description": "Always HTTPS if possible",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "notifications",
+    "*://*/"
+  ],
+  "background": {
+    "scripts": [
+      "tad-https.js"
+    ],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "Dugn Tran <tad88.dev@gmail.com>"
+  },
+  "manifest_version": 2
+}

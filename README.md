@@ -11,4 +11,4 @@ Copyright (c) 2016 Dũng Trần <[chiro@fkguru.com](mailto://chiro@fkguru.com)>
 ## Credits
 Thanks you, for reading. Have any question please contact me via email [chiro@fkguru.com](mailto://chiro@fkguru.com)
 
-* [FkGuru](https://www.fkguru.com) My website
+* [FkGuru](https://fkguru.com) My website

@@ -27,10 +27,10 @@ function secureNonce(v) {
 }
 
 function signMessage(signMessage) {
-  return crypto.createHmac('sha256', secretKey).update(signMessage).digest('hex');
+  return crypto.createHmac('sha256', secretKey).update(signMessage).digest().toString('base64');
 }
 
-let randomNonnce = parseInt(Math.random() * 0xffffffff);
+let randomNonnce = parseInt(Math.random() * 0xffffffff) >>> 0;
 
 let body = JSON.stringify({
   type: 'requestBody',                            //Request type

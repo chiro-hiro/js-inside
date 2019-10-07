@@ -54,7 +54,7 @@ http.createServer(function (request, response) {
     let timeStamp = parseInt(request.headers['content-time']);
 
     response.write(JSON.stringify({
-      isMessageSigned: crypto.timingSafeEqual(signMessage(data), Buffer.from(signed, 'hex')),
+      isMessageSigned: crypto.timingSafeEqual(signMessage(data), Buffer.from(signed, 'base64')),
       isNonceVerified: secureNonce(nonce) === calcualtedNonce,
       isGoodTimeStamp: Date.now() > timeStamp
     }));
